@@ -125,4 +125,52 @@ img{
 	width: 100%;
 
 }
+/*!
+ COMIENZO TE TABLA------------------------------------------------------------------------------
+ -----------------------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------------------------
+ */
+
+#discografia{
+	background-color: #632432;
+	margin-bottom: 0px;
+
+}
+#main-container{
+	margin: 150px auto;
+	width: 80%;
+	background-color: #632432;
+
+
+}
+section.tabla{
+	background-color: #632432;
+
+}
+table{
+	background-color: white;
+	border-collapse: collapse;
+	text-align: left;
+	width: 100%;
+
+}
+
+th, td{
+
+
+	padding: 20px;
+}
+thead{
+	background-color: #246355;
+	color: white;
+	border-bottom: solid 5px #0F362D; 
+
+}
+tr:nth-child(even){
+	background-color: #ddd;
+}
+tr:hover td{
+	background-color: #369681;
+	color: white;
+}
 
