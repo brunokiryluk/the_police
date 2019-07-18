@@ -1,0 +1,39 @@
+
+$navbar-font: 'Poppins', sans-serif;
+
+a.navbar-brand{
+	font-family: $title-font;
+}
+
+$navbar-font-2: 'Heebo', sans-serif;
+
+div.collapse{
+
+font-family: $navbar-font-2;
+
+}
+$title: 'Libre Baskerville', serif;
+
+h5.card-title{
+
+font-family: $title;
+
+}
+h5.police{
+font-family: $title;
+
+}
+
+$cards-p:  'Bitter', serif;
+p.card-text{
+
+font-family: $cards-p;
+}
+
+
+$section-disc-title: 'Alfa Slab One', cursive;
+h3.disc-text{
+
+font-family: $section-disc-title;
+
+}

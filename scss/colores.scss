@@ -1,0 +1,31 @@
+$nav-back: #393e46!important;
+nav.background{
+	background-color: $nav-back;
+}
+$nav-letras: white!important;
+nav a{
+	color: $nav-letras;
+}
+$drop-down: #212529!important;
+div.dropdown-menu a.dropdown-item{
+color:$drop-down;
+}
+
+$section-historia: #393e46;
+
+section.historia{
+
+background-color: $section-historia;
+
+}
+$section-formulario: #393e46;
+
+section.formulario{
+background-color: $section-formulario
+}
+	
+$color-button: #bad7df;
+button.btn-color{
+background-color: $color-button;
+}	
+

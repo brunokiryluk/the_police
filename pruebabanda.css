@@ -1,176 +1,271 @@
-header{
-	background-color: white;
-	padding: 20px;
-	color: black;
-	
-
-}
-div.base{
-	width: 100%;
-	
-	background-color: rgb(97, 173,114);
-	margin-bottom: 0px;
-	padding: 10px;
-}
-
-
-header h1{
-	font-family: 'Archivo Black', sans-serif;
-	color: black;
-	font-size: 70px;
-	font-weight: normal;
-	line-height: 80px;
-
-   }
-   nav{
-   	width: 100%;
-   	padding: 10px;
-   	background-color: grey;
-
-   }
-    div ul li a{
-    	color: white;
-    	text-decoration: none;
-    }
-    ul.absolute{
-    	z-index: 999;
-    	display: none;
-    	position: absolute;
-    	background-color: black;
-    	color: white;
-    	border-bottom: solid;
-    	border-bottom-color: white;
-    	padding: 5px;
-
-    }
-    ul.absolute li{
-    	background-color: black;
-    	color: white;
-    	border-bottom: solid 1px white;
-    	border-right: 0px;
-
-
-    }
-    nav div ul li{
-   	transition: 5s;
-
-    }
-
- nav div ul li:hover{
- 	background-color: red;
-
-
- }
-
-     
-
-    nav div ul li:hover ul.absolute{
-
-display: block;
-
-}
-
-
-    li.relative{
-    	position: relative;
-    }
-
-   ion-icon{
-font-size: 32px;
-color: white;
-float: right;
-}
-
- div ul li{
-	font-family: 'Luckiest Guy', cursive;
-	background-color: grey;
-	display: inline-block;
-	width: 200px;
-	max-width: 800px;
-	min-width: 200px;
-	color: white;
-
-}
-h3.font{
-	font-family: 'Russo One', sans-serif;
-	text-align: center;
-	font-size: 40px;
-	
-
-}
-
-div.contenedor{
-	background-color: rgb(170,85,0);
-	float: left;
-	display: inline-block;
-	margin-bottom: 10px;
-
-
-}
-div.columnas{
-	float: left;
-	display: inline-block;
-	width: calc(33% - 55px);
-	border-right-color: red;
-	border-right: none 5px;
-	margin: 5px;
-
-}
-
-
- div.columnas p{
-	font-family: 'Josefin Sans', sans-serif;
-}
-img{
-	width: 100%;
-
-}
 /*!
- COMIENZO TE TABLA------------------------------------------------------------------------------
+ COMIENZO NAVBAR------------------------------------------------------------------------------
  -----------------------------------------------------------------------------------------------
  --------------------------------------------------------------------------------------------------
  */
-
-#discografia{
-	background-color: #632432;
-	margin-bottom: 0px;
+nav.background{
+	background-color: #393e46!important;
+}
+nav a{
+	color: white!important;
+}
+a.navbar-brand{
+	font-family: 'Poppins', sans-serif;
 
 }
-#main-container{
-	margin: 150px auto;
-	width: 80%;
-	background-color: #632432;
-
+div.collapse{
+font-family: 'Heebo', sans-serif;
+	}
+div.dropdown-menu a.dropdown-item{
+	color: #212529!important;
+}
+h5.card-title{
+	font-size: 80px;
+	font-family: 'Libre Baskerville', serif;
+	margin-left: 120px;
 
 }
-section.tabla{
-	background-color: #632432;
+h5.police{
+	font-size: 80px;
+	font-family: 'Libre Baskerville', serif;
+	margin-left: 85px;
+	
+}
+
+
+/*!
+
+ COMIENZO SECTION INTEGRANTES------------------------------------------------------------------------------
+ -----------------------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------------------------
+ */
+ h5.titulo-carta{
+ 	margin-left: 67px;
+ }
+h5.cartas{
+	font-size: 25px;
+}
+div.card-deck{
+	margin-right: 46px;
+	margin-left: 50px;
+}
+div.borde{
+	border:none;
+	margin-right: 29px;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+p.card-text{    
+font-family: 'Bitter', serif;
+font-size: 14px;
+}
+
+/*!
+
+ COMIENZO SECTION HISTORIA------------------------------------------------------------------------------
+ -----------------------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------------------------
+ */
+section.historia{
+	background-color: #393e46;
+	color: white;
+	padding: 35px;
 
 }
-table{
-	background-color: white;
-	border-collapse: collapse;
-	text-align: left;
+h3.historia-banda{
+	text-align: center;
+}
+p.texto-historia{
+	padding: 40px;
+
+}
+/*!
+ COMIENZO SECTION DISCOGRAFIA------------------------------------------------------------------------------
+ -----------------------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------------------------
+ */
+ h3.disc-text{
+ font-family: 'Alfa Slab One', cursive;
+ margin-top: 20px;
+ text-align: center;
+ }
+ section.discografia{
+ 	display: block;
+ }
+ul.flex-container1{
+	padding: 20px;
+	list-style: none;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+li.flex-item1{
+	position: relative;
+	overflow: hidden;
+	width: 19%;
+	height: auto;
+	text-align: center;
+	margin: 5px 5px 5px 0;
+}
+img.img-effect1{
+	filter: grayscale(0);
+	    box-shadow: 6px 6px 12px -5px rgba(0,0,0,0.52);
+	    transition: transform 2s;
+
+}
+li.flex-item1:hover img.img-effect1{
+	transform: scale(1.2);
+}
+li.flex-item1 div.detalles{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+	background: rgb(0,0,0,.8);
+	transform: scaleY(0);
+	transition: transform .5s;
+}
+li.flex-item1:hover div.detalles{
+transform: scaleY(1);
+}
+li.flex-item1 div.detalles div.contenido{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	padding: 15px;
+	color: #fff;
+}
+li.flex-item1 div.detalles div.contenido h2{
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	color: #ff0;
+}
+li.flex-item1 div.detalles div.contenido ul li{
+	margin: 0px;
+	padding: 0;
+	list-style: none;
+	
+}
+li.flex-item1 div.detalles div.contenido ul{
+	font-size: 10px;
+	padding: 0px;
+}
+
+
+
+/*!
+ COMIENZO SECTION FORMULARIO------------------------------------------------------------------------------
+ -----------------------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------------------------
+ */
+ section.formulario{
+ 	background-color: #393e46;
+ 	color: white;
+
+
+ }
+ /*!
+ div.row{
+ 	margin-left: 80px;
+ }
+ label.labels{
+ 	margin-left: 100px;
+ }
+ */
+button.btn-color{
+	background-color: #bad7df;
+	color: #363434;
+	border: #363434;
 	width: 100%;
 
 }
 
-th, td{
-
-
-	padding: 20px;
-}
-thead{
-	background-color: #246355;
+ /*!
+ COMIENZO SECTION FOOTER------------------------------------------------------------------------------
+ -----------------------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------------------------
+ */
+section.footer{
+	background-color: black;
 	color: white;
-	border-bottom: solid 5px #0F362D; 
+	height: 40px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 10px;
 
 }
-tr:nth-child(even){
-	background-color: #ddd;
-}
-tr:hover td{
-	background-color: #369681;
-	color: white;
+ion-icon{
+	margin-right: 10px;
 }
 
+/* MOBILE STYLE-----------------------*/
+	@media only screen and (max-width: 400px) {
+		li.flex-item1{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin: 5px 5px 5px 0;
+}
+
+li.flex-item1 div.detalles{
+	position: absolute;
+	top: 5px;
+	left: 57px;
+	bottom: 1px;
+	right: 56px;
+	background: rgb(0,0,0,.8);
+	transform: scaleY(0);
+	transition: transform .5s;
+	}
+	p.texto-historia {
+		    padding: 40px;
+    text-align: justify;
+}
+p.card-text {
+	    font-family: 'Bitter', serif;
+    font-size: 14px;
+    text-align: center;
+	}
+	h5.titulo-andy{
+		margin-left:40px;
+	}
+	h5.titulo-stewart{
+		margin-left:45px;
+	}
+
+
+/* TABLET STYLE-----------------------*/
+	@media only screen and (max-width: 768px) {
+		li.flex-item1{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin: 5px 5px 5px 0;
+}
+
+li.flex-item1 div.detalles{
+	position: absolute;
+	top: 5px;
+	left: 57px;
+	bottom: 1px;
+	right: 56px;
+	background: rgb(0,0,0,.8);
+	transform: scaleY(0);
+	transition: transform .5s;
+	}
+
+	li.flex-item1 div.detalles div.contenido h2{
+	margin-top: 20px;
+	padding: 0;
+	font-size: 15px;
+	color: #ff0;
+}
